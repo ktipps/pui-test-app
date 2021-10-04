@@ -24,9 +24,21 @@
             <div class="list">
                 <h2 class="list-title">Groceries</h2>
                 <ol id="grocery-list">
-                    <li>Eggs</li>
-                    <li>Milk</li>
-                    <li>Cereal</li>
+                    <li>Eggs <label for="check-eggs">Eggs</label>
+                        <input id="check-eggs" type="checkbox" class="complete-item"
+                         onclick="completeListItem(this)">
+                        <button class="delete-item" 
+                        onclick="deleteListItem(this.parentNode)">X</button></li>
+                    <li>Milk <label for="check-eggs">Eggs</label>
+                        <input id="check-eggs" type="checkbox" class="complete-item"
+                         onclick="completeListItem(this)">
+                        <button class="delete-item" 
+                        onclick="deleteListItem(this.parentNode)">X</button></li>
+                    <li>Cereal <label for="check-eggs">Eggs</label>
+                        <input id="check-eggs" type="checkbox" class="complete-item"
+                         onclick="completeListItem(this)">
+                        <button class="delete-item" 
+                        onclick="deleteListItem(this.parentNode)">X</button></li>
                 </ol>
 
             </div>
@@ -35,7 +47,7 @@
             <label for="text_input">Text Input:</label>
             <input id="text_input" type="text"></input>
             <label for="new-list-item">New Item:</label>
-            <input id="new-list-item" type="text"/>
+            <input id="new-list-item" type="text"></input>
             <button onclick="addListItem()">Add Item</button>
         </div>
     </div>
